@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>P2P Chat App</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>P2P Chat</h1>
+      <div class="user-settings">
+        <input type="text" id="username-input" placeholder="Your username">
+        <button id="set-username-btn">Set Username</button>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="sidebar">
+        <h2>Online Peers</h2>
+        <div id="peers-list" class="peers-list">
+          <!-- Peers will be listed here -->
+          <div class="no-peers">No peers found yet...</div>
+        </div>
+      </div>
+
+      <div class="chat-area">
+        <div id="messages" class="messages">
+          <!-- Messages will appear here -->
+          <div class="system-message">Welcome to P2P Chat! Messages are only visible to users on your local network.</div>
+        </div>
+        <div class="message-input">
+          <textarea id="message-text" placeholder="Type your message here..."></textarea>
+          <button id="send-btn">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="status">
+        <span id="connection-status">⚪ Initializing...</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

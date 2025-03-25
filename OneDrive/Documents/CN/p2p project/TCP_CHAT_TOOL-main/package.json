@@ -1,0 +1,24 @@
+{
+  "name": "p2p-chat-app",
+  "version": "1.0.0",
+  "description": "Peer-to-peer TCP chat app with UDP discovery",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-builder"
+  },
+  "keywords": [
+    "p2p",
+    "chat",
+    "electron",
+    "tcp",
+    "udp"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^27.0.0",
+    "electron-builder": "^24.6.4"
+  }
+}
